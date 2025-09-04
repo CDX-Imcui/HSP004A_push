@@ -53,7 +53,7 @@ int main() {
                             619.97674, 0.0, 586.32027,
                             0.0, 625.27679, 339.90312,
                             0.0, 0.0, 1.0);
-    cv::Mat distCoeffs = (cv::Mat_<double>(1, 5) << -0.291149, 0.057760, -0.006811, 0.001601, 0.0);
+    cv::Mat distCoeffs = (cv::Mat_<double>(1, 5) << -0.291149, 0.057760, -0.006811, 0.001601, 0.0);//k1、k2、p1、p2、k3
     cv::Mat map1, map2; //去畸变映射表
     cv::initUndistortRectifyMap(cameraMatrix, distCoeffs, cv::Mat(),
                                 cameraMatrix, cv::Size(WIDTH, HEIGHT),
